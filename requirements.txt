@@ -1,0 +1,6 @@
+ultralytics==8.0.178    
+opencv-python          
+matplotlib              
+reportlab             
+numpy                  
+torch                
