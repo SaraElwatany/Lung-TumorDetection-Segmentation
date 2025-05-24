@@ -1,0 +1,17 @@
+dataset_params:
+  ann_train_path: /content/train/detections
+  im_train_path: /content/train/images
+  num_classes: 2
+model_params:
+  backbone: vgg16
+  pretrained: true
+train_params:
+  acc_steps: 1
+  ckpt_name: model.pth
+  lr: 0.001
+  lr_steps:
+  - 5
+  - 8
+  num_epochs: 2
+  seed: 42
+  task_name: test_tumor_detection
