@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+env/
+venv/
+yolovenv/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
+
+# ignore any model
+*.pth
