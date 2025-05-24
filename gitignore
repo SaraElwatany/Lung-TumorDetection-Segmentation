@@ -16,3 +16,7 @@ yolovenv/
 
 # Logs
 *.log
+
+
+# ignore any model
+*.pth
