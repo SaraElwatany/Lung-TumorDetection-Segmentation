@@ -1,6 +1,4 @@
-ultralytics==8.0.178    
-opencv-python          
-matplotlib              
-reportlab             
-numpy                  
-torch                
+ultralytics>=8.0.0
+opencv-python
+matplotlib
+Pillow          
