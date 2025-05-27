@@ -131,6 +131,86 @@ Built using the [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 
 ---
 
+## 🚀 Faster R-CNN 
+
+This project also implements a lung tumor detection pipeline using the **Faster R-CNN** architecture, a popular two-stage object detector known for its accuracy in medical imaging tasks.
+
+---
+
+### 📁 Project Structure (Faster R-CNN)
+
+```
+fasterrcnn/
+├── notebooks/
+│   ├── Object_detection_using_Faster_CNN             
+│   └── inference.py           # Script to run inference
+├── config/                      
+├── tumor.yaml      
+```
+
+---
+
+### ⚙️ Setup
+
+#### 🔧 Install Dependencies
+
+Install all required packages using:
+
+```bash
+pip install -r requirements.txt
+```
+*Make sure `torch`, `torchvision`, and other dependencies for Faster R-CNN are included.*
+
+---
+
+### 🛠️ Preprocessing
+
+Before training Faster R-CNN, prepare your dataset as follows:
+
+1. **Convert Annotations:**
+   - Read the original annotation files.
+   - Convert bounding boxes to the format:  
+     ```
+     [xmin, ymin, xmax, ymax]
+     ```
+   - Store labels and boxes in a dictionary format compatible with PyTorch’s detection API.
+
+2. **Handle Images Without Tumors:**
+   - For images without tumors, provide an empty list of bounding boxes and labels.
+
+3. **Dataset Loader:**
+   - Use a custom PyTorch `Dataset` class to load images and annotations.
+
+---
+
+## 🧪 Training
+
+We use the **Faster R-CNN** model with a vgg-16- backbone for training.
+
+### 🔹 Training Configuration
+
+- Image size: Resized to `512x512` (or as needed)
+- Number of epochs: `15`
+- Batch size: `4`
+- Learning rate: `1e-4`
+- Optimizer: SGD or Adam
+- Data augmentation: Random horizontal/vertical flips, normalization
+
+
+## 🔍 Inference
+
+Once training is complete, use the trained Faster R-CNN model to make predictions on new images.
+
+
+## ✅ Notes
+
+- Adjust `img_path` and `weights` in `inference.py` to test with different images or models.
+- Ensure each image has a corresponding annotation entry, even if it contains no tumors.
+- Faster R-CNN may provide higher accuracy but is generally slower than YOLOv8.
+
+---
+
+
 ## 👨‍🔬 Author
 
 This repository was developed for a lung tumor detection project using deep learning and computer vision.
