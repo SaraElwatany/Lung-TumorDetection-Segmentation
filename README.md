@@ -88,11 +88,13 @@ Binary segmentation was performed on grayscale medical images to localize tumor 
 
 ## 📸 Screenshots
 
-![Screenshot 2025-05-24 130647](https://github.com/user-attachments/assets/a8561fdb-0e18-40ad-9482-463e30d70351)
+- Training & Validation Loss:
+![Screenshot 2025-05-24 130514](https://github.com/user-attachments/assets/707d37e6-bcfe-4a4d-b8b1-48a4b82f23fb)
 
 ![Screenshot 2025-05-24 130521](https://github.com/user-attachments/assets/02b3072b-e83b-4bfb-a68d-a49bdd23b35d)
 
-![Screenshot 2025-05-24 130514](https://github.com/user-attachments/assets/e3628ac4-6ade-46ab-84ea-bb3e33517ed6)
+- Inference:
+![Screenshot 2025-05-24 130647](https://github.com/user-attachments/assets/a8561fdb-0e18-40ad-9482-463e30d70351)
 
 
 ---
@@ -106,11 +108,7 @@ Lung-TumorDetection-Segmentation/
 │ ├── masks/ # Ground truth masks
 │ ├── detections/ # YOLO-format bounding boxes
 │
-│
 ├── validation/
 │ └── segment_detections.py
-│
-├── screenshots/
-│ └── results.png
 │
 └── README.md
