@@ -101,7 +101,7 @@ Binary segmentation was performed on grayscale medical images to localize tumor 
 
 ## 📁 Project Structure
 
-<pre> <code> ``` 
+<pre> <code>
 Lung-TumorDetection-Segmentation/
 │
 ├── Train, Val, Test/
@@ -114,4 +114,4 @@ Lung-TumorDetection-Segmentation/
 │ ├── Fifth Checkpoint/
 │
 └── README.md
-``` </code> </pre>
+</code> </pre>
