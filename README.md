@@ -103,12 +103,12 @@ Binary segmentation was performed on grayscale medical images to localize tumor 
 
 Lung-TumorDetection-Segmentation/
 │
-├── data/
-│ ├── images/ # Input medical images
-│ ├── masks/ # Ground truth masks
-│ ├── detections/ # YOLO-format bounding boxes
+├── Train, Val, Test/
+│ ├── First Checkpoint/
+│ ├── Second Checkpoint/
+│ ├── Third Checkpoint/
 │
-├── validation/
+├── Train, Val/
 │ └── segment_detections.py
 │
 └── README.md
