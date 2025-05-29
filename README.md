@@ -104,11 +104,12 @@ Binary segmentation was performed on grayscale medical images to localize tumor 
 Lung-TumorDetection-Segmentation/
 │
 ├── Train, Val, Test/
-│ ├── First Checkpoint/
+│ └── First Checkpoint/
 │ ├── Second Checkpoint/
 │ ├── Third Checkpoint/
 │
 ├── Train, Val/
-│ └── segment_detections.py
+│ └── Second Checkpoint/
+│ ├── Fifth Checkpoint/
 │
 └── README.md
